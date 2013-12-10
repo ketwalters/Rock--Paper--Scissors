@@ -6,6 +6,7 @@ class Hand
 		@throw = hand.downcase
 		@robot_hand = robot_hand_shake
 		@won = winner(hand, robot_hand)
+		display
 	end 
 
 	def robot_hand_shake
@@ -19,50 +20,54 @@ class Hand
 		when "rock" then rock(robot_hand)
 		when "paper" then paper(robot_hand)
 		else
-			puts "Woah there"
+			"Woah there"
 		end	
 	end
 
 	def scissors(robot_hand)
 		if robot_hand == "rock" 
-			puts "Rock beats scissors"
+			"Rock beats scissors"
 		elsif robot_hand == "laser"
-			puts "Awesome laser melts scissors"
+			"Awesome laser melts scissors"
 		elsif robot_hand == "scissors" 
-			puts "Tie"
+			"Tie"
 		elsif robot_hand == "paper"
-			puts "You've won"
+			"You've won"
 		else
-			puts "Program Error"
+			"Program Error"
 		end
 	end
 
 	def rock(robot_hand)
 		if robot_hand == "rock" 
-			puts "Rock beats scissors"
+			"Rock beats scissors"
 		elsif robot_hand == "laser"
-			puts "Awesome laser melts scissors"
+			"Awesome laser melts scissors"
 		elsif robot_hand == "scissors" 
-			puts "Tie"
+			"Tie"
 		elsif robot_hand == "paper"
-			puts "You've won"
+			"You've won"
 		else
-			puts "Program Error"
+			"Program Error"
 		end
 	end
 
 	def paper(robot_hand)
 		if robot_hand == "rock" 
-			puts "Rock beats scissors"
+			"Rock beats scissors"
 		elsif robot_hand == "laser"
-			puts "Awesome laser melts scissors"
+			"Awesome laser melts scissors"
 		elsif robot_hand == "scissors" 
-			puts "Tie"
+			"Tie"
 		elsif robot_hand == "paper"
-			puts "You've won"
+			"You've won"
 		else
-			puts "Program Error"
+			"Program Error"
 		end
 	end		
+
+	def display
+		won
+	end
 
 end
