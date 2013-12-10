@@ -1,2 +1,5 @@
-require './RPS_App'
+require './game'
+
 run Game::RPS_App
+
+

@@ -1,10 +1,11 @@
-require 'sinatra/application'
-require './hand.rb'
+require './lib/hand.rb'
+require 'bundler'
+Bundler.require
 
 module Game
   class RPS_App < Sinatra::Application
-	get '/throw/:type' do
-	   	@rpsl = Hand.new(params[:type])
+	get '/throw/:type' do |type| 
+	   	@rpsl = Hand.new(type)
 	    erb :hand
 	end
 

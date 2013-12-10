@@ -19,7 +19,7 @@ class Hand
 		when "rock" then rock(robot_hand)
 		when "paper" then paper(robot_hand)
 		else
-		puts "Woah there"
+			puts "Woah there"
 		end	
 	end
 

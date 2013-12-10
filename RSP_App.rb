@@ -1,4 +1,4 @@
-require 'sinatra/base'
+require 'sinatra/Application'
 require './hand.rb'
 
 module Game
