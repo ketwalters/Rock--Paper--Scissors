@@ -1,20 +1,20 @@
 class Hand
 
-	attr_accessor :throw, :robot_hand
+	attr_accessor :hand, :robot_hand
 
-	def initialize(throw)
-		@throw = throw
+	def initialize(hand)
+		@throw = hand.downcase
 		@robot_hand = robot_hand_shake
-		winner(throw, robot_hand)
-	end
+		winner(hand, robot_hand)
+	end 
 
 	def robot_hand_shake
 		hand = ["rock", "paper", "scissors", "laser"]
 		robot_hand = hand[rand(4)]
 	end
 
-	def winner(throw, robot_hand)
-		case throw
+	def winner(hand, robot_hand)
+		case hand
 		when "scissors" then scissors(robot_hand)
 		when "rock" then rock(robot_hand)
 		when "paper" then paper(robot_hand)
@@ -23,7 +23,7 @@ class Hand
 		end	
 	end
 
-	def scissors
+	def scissors(robot_hand)
 		if robot_hand == "rock" 
 			puts "Rock beats scissors"
 		elsif robot_hand == "laser"
@@ -37,7 +37,7 @@ class Hand
 		end
 	end
 
-	def scissors
+	def rock(robot_hand)
 		if robot_hand == "rock" 
 			puts "Rock beats scissors"
 		elsif robot_hand == "laser"
@@ -51,7 +51,7 @@ class Hand
 		end
 	end
 
-	def scissors
+	def paper(robot_hand)
 		if robot_hand == "rock" 
 			puts "Rock beats scissors"
 		elsif robot_hand == "laser"
@@ -63,9 +63,6 @@ class Hand
 		else
 			puts "Program Error"
 		end
-	end
-
-
-				
+	end		
 
 end
