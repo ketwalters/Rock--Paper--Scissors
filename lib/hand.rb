@@ -1,11 +1,11 @@
 class Hand
 
-	attr_accessor :hand, :robot_hand
+	attr_accessor :hand, :robot_hand, :won
 
 	def initialize(hand)
 		@throw = hand.downcase
 		@robot_hand = robot_hand_shake
-		winner(hand, robot_hand)
+		@won = winner(hand, robot_hand)
 	end 
 
 	def robot_hand_shake
