@@ -1,15 +1,11 @@
-require 'sinatra/base'
+require 'sinatra/application'
+require './hand.rb'
 
 module Game
   class RPS_App < Sinatra::Application
-    get '/' do
-    	@random = Compliment.new 
-	    erb :compliment
-    end
-
-	get '/' do
-	   	@random = Compliment.new
-	    erb :compliment
+	get '/throw/:type' do
+	   	@random = Hand.new(params[:type])
+	    erb :hand
 	end
 
   end
