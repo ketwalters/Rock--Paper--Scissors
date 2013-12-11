@@ -26,13 +26,13 @@ class Hand
 
 	def scissors(robot_hand)
 		if robot_hand == "rock" 
-			"Rock beats scissors"
+			"My rock beats your scissors!"
 		elsif robot_hand == "laser"
 			"Awesome laser melts scissors"
 		elsif robot_hand == "scissors" 
-			"Tie"
+			"Two of scissors, cut as one tie"
 		elsif robot_hand == "paper"
-			"You've won"
+			"Your scissots cut through paper like a knife through butter."
 		else
 			"Program Error"
 		end
@@ -40,13 +40,13 @@ class Hand
 
 	def rock(robot_hand)
 		if robot_hand == "rock" 
-			"Rock beats scissors"
+			"Our rocks will roll into a tie"
 		elsif robot_hand == "laser"
-			"Awesome laser melts scissors"
+			"My laser blows up your rock!"
 		elsif robot_hand == "scissors" 
-			"Tie"
+			"You broke my scissors with your rock!"
 		elsif robot_hand == "paper"
-			"You've won"
+			"HAHAHA. I've wrapped your rock with my large paper."
 		else
 			"Program Error"
 		end
@@ -54,13 +54,13 @@ class Hand
 
 	def paper(robot_hand)
 		if robot_hand == "rock" 
-			"Rock beats scissors"
+			"Oh no!  Look what you did to my rock with your paper!"
 		elsif robot_hand == "laser"
-			"Awesome laser melts scissors"
+			"My badass laser burns your paper."
 		elsif robot_hand == "scissors" 
-			"Tie"
+			"Cut, cut, cut... My scissors cuts up your paper."
 		elsif robot_hand == "paper"
-			"You've won"
+			"Our papers can be made into boats or hats."
 		else
 			"Program Error"
 		end
