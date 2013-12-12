@@ -9,5 +9,9 @@ module Game
 	    erb :hand
 	end
 
+	get '/' do
+		erb :index
+	end
+
   end
 end
