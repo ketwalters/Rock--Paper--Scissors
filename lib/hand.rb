@@ -5,7 +5,7 @@ class Hand
 	def initialize(hand)
 		@throw = hand.downcase
 		@robot_hand = robot_hand_shake
-		@won = winner(hand, robot_hand)
+		@won = find_winner(hand, robot_hand)
 		display
 	end 
 
@@ -14,7 +14,7 @@ class Hand
 		robot_hand = hand[rand(5)]
 	end
 
-	def winner(hand, robot_hand)
+	def find_winner(hand, robot_hand)
 		case hand
 		when "scissors" then scissors(robot_hand)
 		when "rock" then rock(robot_hand)
