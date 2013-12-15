@@ -6,16 +6,18 @@
   	<link rel="stylesheet" type="text/css" href="styles.css">
   </head>
  <body>
+ 	<div align="center">
+		<h3>Rock, Paper, Scissors, Lizard, Spock</h3>
 
-	<h3>Rock, Paper, Scissors, Lizard, Spock</h3>
+		<br>
 
-	<br><br>
+		<%= @rpsl.display %>
 
-	<%= @rpsl.display %>
+		<br><br>
 
-	<br><br>
-
- 	<FORM METHOD="LINK" ACTION="/">
-	<INPUT TYPE="submit" VALUE="Play Again">
-	</FORM>
+	 	<FORM METHOD="LINK" ACTION="/">
+		<INPUT TYPE="submit" VALUE="Play Again">
+		</FORM>
+	</div>
 </body>
+</html>
